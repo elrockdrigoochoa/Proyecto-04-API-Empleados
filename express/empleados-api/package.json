@@ -1,0 +1,22 @@
+{
+  "name": "empleados-api",
+  "version": "1.0.0",
+  "description": "proyecto sobre base de datos de empleado",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "./node_modules/nodemon/bin/nodemon.js src/index.js",
+    "dev-w": ".\\node_modules\\nodemon\\bin\\nodemon.js src/index.js",
+    "nodemon": "nodemon src/index.js"
+  },
+  "author": "Rodrigo Ochoa",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "colors": "^1.4.0",
+    "nodemon": "^3.1.4"
+  }
+}

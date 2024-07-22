@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de empleados</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="icon.jpg">
+
+</head>
+
+<body>
+
+    <h1>Lista de empleados SIAPA</h1>
+
+    <main>
+        <section class="middle-screen">
+            <h2>Alta de empleados</h2>
+
+            <form id="empleadoForm">
+                <label for="empleadoName">Empleado:</label><br>
+                <input type="text" id="empleadoName" name="empleadoName">
+
+                <br />
+
+                <label for="apellido">Apellido:</label><br>
+                <input type="text" id="apellido" name="apellido">
+
+                <br />
+
+                <label for="curriculumLink">Curriculum del Empleado (LinkedIn):</label>
+                <input type="text" id="curriculumLink" name="curriculumLink">
+
+                <br />
+                <br />
+
+                <input type="submit" value="Guardar empleado" />
+
+            </form>
+
+        </section>
+        <section class="middle-screen">
+            <h2>Lista de empleados</h2>
+
+            <form id="searchForm">
+                <label for="nameSearched">Buscar por nombre:</label><br>
+                <input type="text" id="nameSearched" name="nameSearched">
+                <br />
+                <input type="submit" value="Buscar" />
+            </form>
+
+        </section>
+    </main>
+
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
