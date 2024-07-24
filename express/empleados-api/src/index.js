@@ -12,7 +12,7 @@ app.get('/hellow', (req, res) => {
     res.send('<h1> Hola desde express! </h1>');
 });
 
-const songs = [
+const empleados = [
     { id: 1, name: 'Juan', apellido: 'Perez', curriculum: '' },
     { id: 2, name: 'Maria', apellido: 'Ramirez', curriculum: '' },
     { id: 3, name: 'Raul', apellido: 'Zaragoza', curriculum: '' },
@@ -32,16 +32,18 @@ app.use(express.json());
 app.get('/empleados', (req, res) => {
 
     const name = req.query.name;
+    console.log(name)
+    console.log(name === undefined)
 
-    if (!name) {
+    if (name === undefined) {
         res.json(empleados);
     }
 
-    const filteredEmpleadosByName = songs.filter((empleados) => {
-        return empleados.name.toLocaleLowerCase().includes(name.toLocaleLowerCase())
-    });
+    // const filteredEmpleadosByName = empleados.filter((empleados) => {
+    //     return empleados.name.toLocaleLowerCase().includes(name.toLocaleLowerCase())
+    // });
 
-    res.json(filteredEmpleadossByName);
+    // res.json(filteredEmpleadosByName);
 });
 
 // GET: Obtener un empleado en especifico

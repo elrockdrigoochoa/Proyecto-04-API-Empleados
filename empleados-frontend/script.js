@@ -67,8 +67,8 @@ registerFormElement.addEventListener('submit', (event) => {
 
     const formData = new FormData(event.target);
 
-    const song = formData.get('empleadoName');
-    const artist = formData.get('apellido');
+    const empleado = formData.get('empleadoName');
+    const apellido = formData.get('apellido');
     const link = formData.get('curriculumLink');
 
     const body = { name: empleado, apellido: apellido, curriculum: link };
@@ -84,7 +84,8 @@ searchFormElement.addEventListener('submit', (event) => {
 
 const getData = async (nameSearched) => {
     const empleados = await getEmpleados(nameSearched);
-    generateSongsView(empleados);
+    console.log(empleados);
+    // generateEmpleadosView(empleados);
 };
 
 getData();
